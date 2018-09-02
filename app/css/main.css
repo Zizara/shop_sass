@@ -114,3 +114,122 @@ a {
   clear: both;
   visibility: hidden;
 }
+
+body {
+  color: #222;
+  font: 400 10px "Varela Round", Arial, sans-serif;
+  background: #FFF;
+}
+
+/* MAIN STYLES */
+/* ================================================ */
+.main-wrapper {
+  padding: 0;
+  min-width: 320px;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  display: inline-block;
+}
+
+/* text position */
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-error {
+  color: #ff3f2b;
+}
+
+/* Icons
+     @mixin ===================== */
+.ic {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Buttons
+     @mixin ===================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 30px;
+  background-color: #1f4ba5;
+  padding: 0 25px;
+  border-radius: 20px;
+  font-family: "Varela Round", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+.favorite {
+  color: #b8b8b8;
+  font-family: "PT Serif", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+.favorite .icon {
+  font-size: 14px;
+}
+
+.favorite:hover {
+  color: #fff;
+}
+
+/* Header
+     @mixin ===================== */
+.header {
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.mainMenu {
+  list-style: none;
+  display: flex;
+}
+
+.mainMenu__item {
+  position: relative;
+}
+
+.mainMenu__link {
+  color: #222;
+  font-size: 14px;
+  display: block;
+  padding: 0 20px;
+}
+
+.mainMenu__link [class*="icon"] {
+  font-size: 8px;
+  color: #1f4ba5;
+}
