@@ -222,7 +222,12 @@ span {
   position: relative;
 }
 
+.mainMenu__item:hover .dropDown_content {
+  display: block;
+}
+
 .mainMenu__link {
+  line-height: 80px;
   color: #222;
   font-size: 14px;
   display: block;
@@ -232,4 +237,13 @@ span {
 .mainMenu__link [class*="icon"] {
   font-size: 8px;
   color: #1f4ba5;
+}
+
+.dropDown_content {
+  position: absolute;
+  background: #222;
+  padding: 30px;
+  width: 240px;
+  display: none;
+  top: 100%;
 }
