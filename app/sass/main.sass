@@ -113,13 +113,15 @@ span
 
 .mainMenu
 	list-style: none
-	margin-right: 70px
+	margin-right: 5px
 	display: flex
 	&__item
 		position: relative
 		&:hover
 			.dropDown_content
-				display: block
+				opacity: 1
+				margin-top: 0
+				left: -10px
 	&__link
 		line-height: 80px
 		color: $color
@@ -136,9 +138,11 @@ span
 	background: $color
 	padding: 30px
 	width: 240px
-	display: none
+	opacity: 0
+	margin-top: 30px
+	transition: opacity 0.3s, margin-top 0.4s
 	top: 100%
-	left: -10px
+	left: -10000px
 	&:before
 		content: ''
 		display: block
@@ -160,7 +164,7 @@ span
 .search
 	flex: 1
 	position: relative
-	margin-right: 50px
+	margin-right: 20px
 	&__input
 		height: 30px
 		width: 100%
@@ -190,3 +194,44 @@ span
 	[class*="icon"]
 		font-size: 18px
 		color: $color
+
+.profile_menu 
+	list-style: none
+	display: flex
+	&__item
+		position: relative
+	&__link	
+		line-height: 80px
+		padding: 0 20px
+		[class*="icon"]
+			font-size: 18px
+			color: $color
+			vertical-align: middle
+
+.b_prices
+	margin-left: 15px
+	font-family: $font-family2
+	color: $color
+	vertical-align: middle
+	font-size: 12px
+
+.basket
+	line-height: $line-height
+	position: relative
+	.badge
+		position: absolute
+		top: -8px
+		left: 9px
+
+.badge
+	min-width: 16px
+	height: 16px
+	background-color: $color-blue
+	border-radius: 50%
+	padding: 0 4px
+	display: inline-block
+	text-align: center
+	vertical-align: middle
+	line-height: 17px
+	color: #fff
+	font-size: 9px

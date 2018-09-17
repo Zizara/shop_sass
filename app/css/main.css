@@ -220,7 +220,7 @@ span {
 
 .mainMenu {
   list-style: none;
-  margin-right: 70px;
+  margin-right: 5px;
   display: flex;
 }
 
@@ -229,7 +229,9 @@ span {
 }
 
 .mainMenu__item:hover .dropDown_content {
-  display: block;
+  opacity: 1;
+  margin-top: 0;
+  left: -10px;
 }
 
 .mainMenu__link {
@@ -250,9 +252,11 @@ span {
   background: #222;
   padding: 30px;
   width: 240px;
-  display: none;
+  opacity: 0;
+  margin-top: 30px;
+  transition: opacity 0.3s, margin-top 0.4s;
   top: 100%;
-  left: -10px;
+  left: -10000px;
 }
 
 .dropDown_content:before {
@@ -288,7 +292,7 @@ span {
 .search {
   flex: 1;
   position: relative;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .search__input {
@@ -323,4 +327,57 @@ span {
 .location [class*="icon"] {
   font-size: 18px;
   color: #222;
+}
+
+.profile_menu {
+  list-style: none;
+  display: flex;
+}
+
+.profile_menu__item {
+  position: relative;
+}
+
+.profile_menu__link {
+  line-height: 80px;
+  padding: 0 20px;
+}
+
+.profile_menu__link [class*="icon"] {
+  font-size: 18px;
+  color: #222;
+  vertical-align: middle;
+}
+
+.b_prices {
+  margin-left: 15px;
+  font-family: "Oswald";
+  color: #222;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.basket {
+  line-height: 1.4;
+  position: relative;
+}
+
+.basket .badge {
+  position: absolute;
+  top: -8px;
+  left: 9px;
+}
+
+.badge {
+  min-width: 16px;
+  height: 16px;
+  background-color: #1f4ba5;
+  border-radius: 50%;
+  padding: 0 4px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 17px;
+  color: #fff;
+  font-size: 9px;
 }
